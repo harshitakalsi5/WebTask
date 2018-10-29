@@ -104,7 +104,7 @@ section { overflow: hidden; }
 .text-primary{color: #00a885 !important;;}
 .text-finence{color:#13A0B2 !important;;}
 .text-mega{color:#00a885 !important;;}
-.text-white{color:#fff !important;;}
+.text-white{color:#fff !important; font-style: italic;;}
 .text-black{color:#000 !important;}
 .text-warning{}
 .text-danger{}
@@ -113,8 +113,9 @@ section { overflow: hidden; }
 }
 
 /*bacground color*/
+.bg-head{background-color: #15BEBE;}
 .lightbg {
-    background-color: #f2f2f2;
+    background-color: #fff;
 }
 .bg-primary{background-color: #00a885;}
 .bg-finence{background-color:#13A0B2;}
@@ -842,26 +843,28 @@ Nav Menu style
     width: 80%;
 }
 
-.navbar-callus li a{
-    font-size:14px;
-    padding: 10px;
-    color:#444444;
+.navbar-collapse li a{
+    font-size:20px;
+    padding: 10px; 
     display: inline-block;
 }
-.navbar-callus li a i{
+
+.navbar-collapse li a i{
     font-size:13px;
-    color:#1abc9c;
     margin-right: 5px;
+      color:#383838;
 }
-.navbar-socail li a{
+.navbar-menu li a{
     font-size:16px;
     padding: 10px;
-    color:#aaaaaa;
+    color:#383838;
     display: inline-block;
 }
-.navbar-socail li a:hover{
+.navbar-menu li a:hover{
     background-color: #3765a3;
     color:#fff;
+    color:#383838;
+    font-weight: bold;
 }
 
 
@@ -947,30 +950,40 @@ Home Section style
 Featured section style
 ========================*/
 
-.features_item .f_item_icon{
-    float: left;
-    width:15%;
-    display: inline-block;
-    margin-right: 15px;
+.features{
+    background-color: #C0E7E8;
 }
 .features_item .f_item_icon i{
     font-size:4rem;
     color:#00a885;
 }
-.features_item .f_item_text{
+ .f_item_text h2{
+     
+     font-family:inherit ;
+     font-weight: bold;
+     margin-left: 80px;
+     text-align: center;
     display: inline-block;
-    width:75%;
+    width:80%;
+    
 }
-.features_item .f_item_text p{
-    font-size:14px;
+.f_item_text p{
+    
+    margin-left: 120px;
+    text-align: justify;
+    font-size:20px;
+    color:#000000;
+    line-height: 1.6;
 }
 
 /*Business Section*/
 .main_business{}
 .business_item{}
 .business_item h2{
-    font-size:26px;
+    margin-left:20px;
+    font-size:40px;
     font-weight: 800;
+    font-family: inherit;
 }
 .business_item li{
     font-size:18px;
@@ -988,15 +1001,7 @@ Featured section style
     font-size:14px;
     font-weight: 500;
 }
-.business_item .business_btn{
-    margin-left:-10px;
-}
-.business_item .business_btn a{
-    margin-left:10px;
-}
-.business_item .business_btn .btn-default{
-    color:#444444;
-}
+
 
 
 .slid_shap{
@@ -1115,22 +1120,17 @@ work Section style
     position: absolute;
     left:0;
     top:0;
-    padding-top: 35%;
+    padding-top: 10%;
     opacity: 0;
     transition: all 0.2s;
 }
 .main_product .port_overlay a{
-    width:40px;
-    height: 40px;
-    line-height: 40px;
-    margin: 0 auto;
-    color:#fff;
-    border:1px solid #fff;
-    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-top: 5px;
     display: inline-block;
-    font-size:2rem;
-    bottom: -150px;
-    position: relative;
+    font-size:15px;
+    color:#000;
+    font-weight: bold;
 }
 .main_product .port_img:hover .port_overlay a{
     bottom:0;
@@ -1191,48 +1191,35 @@ work Section style
 
 /*Brand Section
 =========================*/
+.brand{
+    background-color: #C0E7E8;
+}
+.main_brand h1{
+    font-weight: bold;
+}
 .brand_item img{
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-    transition: all 0.6s;
-    height: 30px;
+  
+   height: 280px;
+   width: 100%;
 }
-.brand_item img:hover{
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
-}
-
-
-
-
-/*call to action
-=========================*/
-
-.action_btn .btn-default:hover{
-    background-color: #fff;
-    color:#00a885;
-}
-.action-lage{
-    position: relative;
-    width:100%;
-
-}
-.action-lage:before{
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 20px solid #00a885;
-    left:50%;
-    top:0%;
-    z-index: 3;
-    margin-left:-15px;
-
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.brand_item .column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  flex: 33.33%;
 }
 
+/* Clear floats after image containers */
+.brand_item .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
+.brand_item .row {
+  display: flex;
+}
 
 /*Footer section*/
 .divider{
