@@ -86,7 +86,9 @@ Author URI: http://www.xpeedstudio.com
         margin-bottom:20px;
     }
 
-
+    .main_home img{
+        size: 50%;
+    }
     .main_home .home_text h2{
         font-size:24px;
     }
@@ -99,7 +101,16 @@ Author URI: http://www.xpeedstudio.com
     .main_product .carousel-control{
         display: none;
     }
-
+    .f_item_text p{
+        font-size: 15px;
+        text-align: left;
+    }
+    table,td,tr{
+        display: block;
+        
+    }
+    
+    
 }
 
 
