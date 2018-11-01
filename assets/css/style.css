@@ -836,11 +836,15 @@ Nav Menu style
 ==================*/
 
 .navbar-brand {
-    padding: 25px 15px;
+  padding: 25px 15px;  
+   
 }
 .navbar-brand > img {
-    display: block;
-    width: 80%;
+    display: fixed;
+    width: 210px;
+    height: 120px;
+    margin-top: -45px;
+    margin-left: 10px;
 }
 
 .navbar-collapse li a{
@@ -1122,13 +1126,16 @@ work Section style
     position: absolute;
     left:0;
     top:0;
-    padding-top: 10%;
+    padding-top: 25%;
     opacity: 0;
     transition: all 0.2s;
 }
 .main_product .port_overlay a{
     margin-bottom: 5px;
+    margin-left: 5px;
     margin-top: 5px;
+    margin-right: 5px;
+    text-align: centre;
     display: inline-block;
     font-size:15px;
     color:#000;
@@ -1140,7 +1147,9 @@ work Section style
 .main_product .port_img:hover .port_overlay{
     opacity: 1;
 }
-
+.port_caption h6{
+    font-weight: bold;
+}
 
 
 
@@ -1206,7 +1215,7 @@ work Section style
    margin-bottom: 10px;
    
 }
-.brand_item h5{
+.brand_item h4{
     font-weight: bold;
 }
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -1338,4 +1347,8 @@ table{
 .main_footer a {
     color: #ddd;
     padding: 5px;
+}
+.port_img img{
+    height: 250px;
+    width: 290px;
 }
